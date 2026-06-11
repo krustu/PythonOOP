@@ -1,12 +1,9 @@
 
-class Animal:
-    def eat(self):
-        print("Animal is eating")
+class Tier1:
+    def __init__(self, name):
+        self.name = name
 
-class Dog(Animal):
-    def bark(self):
-        print("Dog is barking")
-
-dog = Dog()
-dog.eat()
-dog.bark()
+class King(Tier1):
+    pass
+King = King("Rysbek")
+print(King.name)
