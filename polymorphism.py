@@ -1,17 +1,21 @@
+# Polymorphism example
 
 class Animal:
-    def sound(self):
-        print("Animal sound")
+    def make_sound(self):
+        print("Some animal sound")
 
 class Dog(Animal):
-    def sound(self):
+    def make_sound(self):
         print("Woof!")
 
 class Cat(Animal):
-    def sound(self):
+    def make_sound(self):
         print("Meow!")
 
-animals = [Dog(), Cat()]
+dog = Dog()
+cat = Cat()
+
+animals = [dog, cat]
 
 for animal in animals:
-    animal.sound()
+    animal.make_sound()
